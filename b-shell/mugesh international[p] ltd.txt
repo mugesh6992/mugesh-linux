@@ -1,0 +1,24 @@
+echo "mugesh international[p] ltd"
+echo "no.13, anna nagar street,puducherry"
+echo "-----------------------------"
+echo "employee payroll system"
+echo "------------------------"
+
+read -p "Enter the employee no: " empno
+read -p "Enter the employee name: " name
+read -p "Enter the salary: " salary
+
+bonus=$((salary * 20 / 100))
+gross=$((salary + bonus))
+expenditure=$((salary * 5 / 100))
+net=$((gross - expenditure))
+
+echo "-----------------------------"
+echo "Report"
+echo "Employee No: $empno"
+echo "Employee Name: $name"
+echo "Salary: $salary"
+echo "Bonus (20%): $bonus"
+echo "Gross Pay: $gross"
+echo "Expenditure (5%): $expenditure"
+echo "Net Pay: $net"
